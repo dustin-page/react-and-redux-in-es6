@@ -1,12 +1,14 @@
 {
-    "name": "pluralsight-redux-starter",
+    "name": "react-redux-starter",
     "version": "1.0.0",
-    "description": "Starter kit for React and Redux Pluralsight course by Cory House",
+    "description": "Starter kit for React and Redux",
     "scripts": {
         "prestart": "babel-node tools/startMessage.js",
-        "start": "babel-node tools/srcServer.js"
+        "start": "babel-node tools/srcServer.js",
+        "lint": "node_modules/.bin/esw webpack.config.* src tools",
+        "lint:watch": "npm run lint -- --watch"
     },
-    "author": "Cory House",
+    "author": "Dustin Page",
     "license": "MIT",
     "dependencies": {
       "babel-polyfill": "6.8.0",
@@ -62,6 +64,6 @@
     },
     "repository": {
       "type": "git",
-      "url": "https://github.com/coryhouse/pluralsight-redux-starter"
+      "url": "https://github.com/dustin-page/react-and-redux-in-es6"
     }
   }
